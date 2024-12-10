@@ -6,7 +6,12 @@ const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
   future: { compatibilityVersion: 4 },
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/color-mode", "shadcn-nuxt"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
+    "@nuxt/icon",
+    "shadcn-nuxt",
+  ],
   shadcn: {
     prefix: "",
     componentDir: join(currentDir, "./app/components/ui"),
@@ -18,6 +23,9 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "dark",
+  },
+  icon: {
+    mode: "svg",
   },
   alias: {
     "@core": join(currentDir, "./framework"),
