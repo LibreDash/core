@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@nuxt/icon",
+    "@vueuse/nuxt",
     "shadcn-nuxt",
   ],
   shadcn: {
