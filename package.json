@@ -11,11 +11,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@iconify-json/lucide": "^1.2.18",
     "@nuxt/eslint": "latest",
-    "@nuxt/icon": "1.10.0",
-    "@nuxtjs/color-mode": "3.5.2",
-    "@nuxtjs/tailwindcss": "6.12.2",
     "@types/eslint-plugin-tailwindcss": "^3.17.0",
     "eslint": "^9.16.0",
     "eslint-config-prettier": "^9.1.0",
@@ -24,17 +20,21 @@
     "nuxt": "^3.14.1592",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
-    "shadcn-nuxt": "0.11.3",
     "typescript": "^5.7.2",
     "vue": "latest"
   },
   "dependencies": {
+    "@iconify-json/lucide": "^1.2.18",
     "@vueuse/nuxt": "12.5.0",
     "@vueuse/core": "^12.5.0",
+    "@nuxt/icon": "1.10.0",
+    "@nuxtjs/color-mode": "3.5.2",
+    "@nuxtjs/tailwindcss": "6.12.2",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.468.0",
     "radix-vue": "^1.9.11",
+    "shadcn-nuxt": "0.11.3",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
   },
