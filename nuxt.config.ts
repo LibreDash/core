@@ -11,12 +11,18 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/icon",
     "@vueuse/nuxt",
-    "shadcn-nuxt",
   ],
-  shadcn: {
-    prefix: "",
-    componentDir: join(currentDir, "./app/components/ui"),
-  },
+  components: [
+    {
+      path: join(currentDir, "./app/components"),
+      ignore: [join(currentDir, "./app/components/ui")],
+    },
+    {
+      path: join(currentDir, "./app/components/ui"),
+      extensions: [".vue"],
+      pathPrefix: false,
+    },
+  ],
   tailwindcss: {
     configPath: join(currentDir, "./tailwind.config.js"),
     cssPath: join(currentDir, "./app/assets/css/tailwind.css"),
